@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Codes for Quantum sensing of displacements with stabilized GKP states"
+authors:
+- family-names: "Labarca"
+  given-names: "Lautaro"
+- family-names: "Turcotte"
+  given-names: "Sara"
+
+title: "Repository for Quantum sensing of displacements with stabilized GKP states"
+version: 1.0
+date-released: 2025-06-23
+url: "https://github.com/LautaroLabarcaG/Quantum-sensing-of-displacements-with-stabilized-GKP-states"
