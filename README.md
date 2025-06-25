@@ -27,4 +27,14 @@ All necessary functions are written in the python files "sBs.py", "bits.py", "me
 
 ### The folder Noise contains the codes for all results with noise.
 
-The data is obtained and managed from the jupyter notebooks: "running_noise", "running_bakcaction_2", "simple-sBs-bitflip-analysis"
+The data is obtained and managed from the jupyter notebooks: "running_noise", "running_backaction_2", "simple-sBs-bitflip-analysis".
+
+All functions are defined in the python files: ""
+
+**running_noise.ipynb**: used to create all parameter files, and to run sBs in the presence of noise. Structure is clear within. 
+
+**running_backaction_2**: Idem as above but for backaction evading performance. 
+
+**simple-sBs-bitflip-analysis**: Used to obtain Fig. 16. 
+
+
