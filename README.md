@@ -25,6 +25,6 @@ All necessary functions are written in the python files "sBs.py", "bits.py", "me
 
 **backaction.py**: Functions used for backaction evading performance analysis.
 
-### The folder Noise the codes for all results with noise.
+### The folder Noise contains the codes for all results with noise.
 
-The data is obtained and managed from the jupyter notebooks: "sBs-noiseless", "metrological-potential-noiseless"
+The data is obtained and managed from the jupyter notebooks: "running_noise", "running_bakcaction_2", "simple-sBs-bitflip-analysis"
