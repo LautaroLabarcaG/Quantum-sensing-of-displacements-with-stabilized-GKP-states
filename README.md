@@ -1,9 +1,11 @@
 # Quantum-sensing-of-displacements-with-stabilized-GKP-states
 Repository with the codes necessary to reproduce the results of the article "Quantum sensing of displacements with stabilized GKP states" by authors L. Labarca, S. Turcotte, A. Blais, B. Royer.
 
-For the plots, the basic function calls are in "plotsmodule.py". The environement requirements are in "used_packages.txt". 
+The environement requirements are in "used_packages.txt". 
 
 ### The folder figures contains all the data and code to reproduce the figures of the paper. 
+
+For the plots, the basic function calls are in "plotsmodule.py".
 
 ### The folder noiseless contains the codes for all results in the absence of noise.
 
