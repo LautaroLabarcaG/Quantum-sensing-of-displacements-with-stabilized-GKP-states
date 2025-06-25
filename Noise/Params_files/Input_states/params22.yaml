@@ -1,0 +1,23 @@
+---
+ dimensions: 
+  qubit: 2
+  cavity: 140
+ state_params:
+  delta : 0.37
+  l : np.sqrt(2 * np.pi)
+ decays:
+  ratio: 1.0
+  qubit_T1: 280 # in us
+  qubit_T2: 240 # in us
+  cavity_T1: 610 # in us
+  cavity_T2: 980 # in us
+ simulations:
+  r: 1
+  M: 100
+  v_lim: 0.00001
+  t_CD_B: 0.5 # in us
+  kerr: -2*np.pi*4.8*10e-6 # in MHz
+  n_v: 2
+  p_0: 0.0
+  n_jobs: 20
+  # Yale parameters

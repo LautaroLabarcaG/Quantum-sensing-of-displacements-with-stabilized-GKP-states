@@ -1,0 +1,21 @@
+decays:
+  cavity_T1: 1220
+  cavity_T2: 1960
+  qubit_T1: 560
+  qubit_T2: 480
+  ratio: 2.0
+dimensions:
+  cavity: 140
+  qubit: 2
+simulations:
+  M: 100
+  kerr: -2*np.pi*4.8*10e-6
+  n_jobs: 20
+  n_v: 2
+  p_0: 0.0
+  r: 1
+  t_CD_B: 0.5
+  v_lim: 1.0e-05
+state_params:
+  delta: 0.3900000000000001
+  l: np.sqrt(2 * np.pi)
