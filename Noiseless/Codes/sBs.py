@@ -92,6 +92,7 @@ def sBs_q(mu,Delta):
     nu = (-1)**mu
     return CD(small)@I_Rx(-nu*np.pi/2)@CD(large)@I_Rx(np.pi/2)@CD(small)
 
+#sBs with measurement
 def sBs_p_measurement(mu,Delta):
     #corresponds to pg \simeq (1-nu\sin(lp))/2
     sd, cd, td = np.sinh(Delta**2), np.cosh(Delta**2), np.tanh(Delta**2)
@@ -104,6 +105,30 @@ def sBs_q_measurement(mu,Delta):
     large, small = -1j*l*cd, l*sd/2
     nu = (-1)**mu
     return I_Rx(-nu*np.pi/2)@CD(large)@I_Rx(np.pi/2)@CD(small)
+
+#BsB with reset
+def BsB_p(Delta): #no gauge update for BsB
+    #corresponds to pg \simeq (1-nu\sin(lp))/2
+    sd, cd, td = np.sinh(Delta**2), np.cosh(Delta**2), np.tanh(Delta**2)
+    large, small = l*cd, 2*1j*l*sd
+    return CD(large)@I_Rx(nu*np.pi/2)@CD(small)@I_Rx(np.pi/2)@CD(large)
+def BsB_q(Delta):
+    #corresponds to pg \simeq (1-nu\sin(lq))/2
+    sd, cd, td = np.sinh(Delta**2), np.cosh(Delta**2), np.tanh(Delta**2)
+    large, small = -1j*l*cd, l*sd/2
+    return CD(small)@I_Rx(np.pi/2)@CD(large)@I_Rx(np.pi/2)@CD(small)
+
+#BsB with measurement
+def BsB_p_measurement(Delta):
+    #corresponds to pg \simeq (1-nu\sin(lp))/2
+    sd, cd, td = np.sinh(Delta**2), np.cosh(Delta**2), np.tanh(Delta**2)
+    large, small = l*cd, 1j*l*sd/2
+    return I_Rx(np.pi/2)@CD(large)@I_Rx(np.pi/2)@CD(small)
+def BsB_q_measurement(mu,Delta):
+    #corresponds to pg \simeq (1-nu\sin(lq))/2
+    sd, cd, td = np.sinh(Delta**2), np.cosh(Delta**2), np.tanh(Delta**2)
+    large, small = -1j*l*cd, l*sd/2
+    return I_Rx(np.pi/2)@CD(large)@I_Rx(np.pi/2)@CD(small)
 
 def Krauss_dictionaries(Delta):
     Uq0, Uq1  = sBs_q_measurement(0,Delta), sBs_q_measurement(1,Delta)
